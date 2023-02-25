@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Send Text Message</title>
+  </head>
+  <body>
+    <h1>Send Text Message</h1>
+    <form action="{{ url_for('send_message') }}" method="POST">
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone"><br><br>
+      <label for="message">Message:</label>
+      <input type="text" id="message" name="message"><br><br>
+      <input type="submit" value="Send">
+    </form>
+  </body>
+</html>
